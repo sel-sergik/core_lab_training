@@ -1,0 +1,16 @@
+#superhero-block h2 {
+	padding-left: 40px;
+}
+
+#superhero-block ul {
+	list-style: none;
+}
+
+#superhero-block li span {
+	display: inline-block;
+}
+
+#superhero-block li span:first-child {
+	width: 200px;
+	text-transform: capitalize;
+}

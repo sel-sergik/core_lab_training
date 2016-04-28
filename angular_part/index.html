@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="superheroApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AngularJS project for Core Lab Training</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="superhero-block" ng-controller="SuperheroController as superhero">
+			<img src="images/deadpool.jpg">
+			<ul>
+				<li>
+					<span>{{superhero.abilities[0].name}}</span>
+					<span>
+						<button ng-click="superhero.reduceSkillLevel(0)">-</button>
+						<input type="text" ng-model="superhero.abilities[0].value" aria-labelledby="select_0" />
+						<button ng-click="superhero.addSkillLevel(0)">+</button>
+					</span>
+				</li>
+				<li>
+					<span>{{superhero.abilities[1].name}}</span>
+					<span>
+						<button ng-click="superhero.reduceSkillLevel(1)">-</button>
+						<input type="text" ng-model="superhero.abilities[1].value" aria-labelledby="select_1" />
+						<button ng-click="superhero.addSkillLevel(1)">+</button>
+					</span>
+				</li>
+				<li>
+					<span>{{superhero.abilities[2].name}}</span>
+					<span>
+						<button ng-click="superhero.reduceSkillLevel(2)">-</button>
+						<input type="text" ng-model="superhero.abilities[2].value" aria-labelledby="select_2" />
+						<button ng-click="superhero.addSkillLevel(2)">+</button>
+					</span>
+				</li>
+				<li>
+					<span>{{superhero.abilities[3].name}}</span>
+					<span>
+						<button ng-click="superhero.reduceSkillLevel(3)">-</button>
+						<input type="text" ng-model="superhero.abilities[3].value" aria-labelledby="select_3" />
+						<button ng-click="superhero.addSkillLevel(3)">+</button>
+					</span>
+				</li>
+		 </ul>
+		 <h2>Total:{{superhero.total}}</h2>
+		</div>
+	</div>
+</body>
+</html>
