@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="booksApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AngularJS project for Core Lab Training(Built-in directives  and  built-in services)</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row" ng-controller="BookListController as list">
+			<div class="col-xs-12 buttons">
+				<a ng-class="!list.onlyFav ? 'btn btn-primary' : 'btn btn-default'" ng-click="list.onlyFav=false">All Books</a>
+				<a ng-class="list.onlyFav ? 'btn btn-primary' : 'btn btn-default'" ng-click="list.onlyFav=true">Favourite</a>
+			</div>
+			<div class="col-xs-12 books-list">
+				<h1 class="error" ng-show="!list.loadSuccess">Request error</h1>
+				<table class="table table-striped" ng-show="list.loadSuccess">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>ISBN</th>
+							<th>Fav</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="book in list.books" ng-if="!list.onlyFav || book.fav">
+							<td>{{book.name}}</td>
+							<td>{{book.isbn}}</td>
+							<td>
+								<span ng-if="book.fav">
+									<img src="images/favourite.png"></i>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

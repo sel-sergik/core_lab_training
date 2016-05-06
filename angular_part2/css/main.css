@@ -1,0 +1,22 @@
+.container {
+	margin-top: 50px;
+}
+
+.books-list {
+	margin-top: 50px;
+}
+
+.books-list .table>tbody>tr>td{
+  vertical-align: middle;
+}
+
+img {
+	width: 25px;
+	height: 25px;
+}
+
+h1.error {
+	color: red;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}

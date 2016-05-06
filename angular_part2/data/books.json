@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lorem cillum",
+    "isbn": 539998,
+    "fav": true
+  },
+  {
+    "name": "consequat ea ea et veniam",
+    "isbn": 662483,
+    "fav": true
+  },
+  {
+    "name": "sunt laboris dolor",
+    "isbn": 747024,
+    "fav": false
+  },
+  {
+    "name": "irure veniam",
+    "isbn": 779903,
+    "fav": false
+  },
+  {
+    "name": "commodo nisi dolor deserunt ullamco dolor",
+    "isbn": 929337,
+    "fav": false
+  },
+  {
+    "name": "in exercitation duis est ipsum",
+    "isbn": 398762,
+    "fav": true
+  },
+  {
+    "name": "id magna",
+    "isbn": 436353,
+    "fav": false
+  },
+  {
+    "name": "laborum enim labore mollit laborum",
+    "isbn": 712099,
+    "fav": true
+  },
+  {
+    "name": "officia fugiat",
+    "isbn": 27641,
+    "fav": false
+  },
+  {
+    "name": "nisi do duis",
+    "isbn": 139177,
+    "fav": false
+  }
+]
